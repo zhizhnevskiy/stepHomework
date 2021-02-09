@@ -25,7 +25,10 @@
 <br>
 <?php
 $phone = $_POST["phone"];
-if (preg_match("/^((80212|\+375(\-)?(\()?212(\))?)?[0-9,\-]{6,9})/iu", $phone)) {
+$phone = preg_replace("/[^0-9\+]/","", $phone);
+echo $phone;
+//if (preg_match("/^((80|\+375(\-)?(\()?212(\))?)?[0-9,\-]{6,9})/iu", $phone)) {
+if (preg_match("/^(80|\+375)212[2369]\d{5}$/iu", $phone)) {
     echo "Thanks, we will call you back to " . $phone;
 } else {
     echo "Sorry, you are not from Vitebsk";
