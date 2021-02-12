@@ -58,7 +58,7 @@ if (!empty($name) & !empty($email) & !empty($website) & !empty($comment) & !empt
 $row = "\n<----->\n" . $name . "\n" . $email .
     "\n" . $website . "\n" . $comment . "\n" . $gender .
      "\n" . date("d.m.Y") . "\n" . date("H:i");
-file_put_contents("quest.txt", $row, FILE_APPEND);
+file_put_contents("contact.txt", $row, FILE_APPEND);
 }
 // header("Location: ?");
 // die();

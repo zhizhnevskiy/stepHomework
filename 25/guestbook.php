@@ -15,7 +15,7 @@ require_once "config.php";
     <div class="box">
     <h2>My guestbook</h2>
     <form method="POST" action="?">
-        Name: <input type="text" name="name" value="<?php echo $name; ?>">
+        Name: <input type="text" name="name" value="<?php echo $name2; ?>">
         <span class="error">* <?php echo $nameErr; ?></span>
         <br><br>
         E-mail: <input type="text" name="email" value="<?php echo $email; ?>">
@@ -47,7 +47,7 @@ require_once "config.php";
             <th>Gender</th>
         </tr>
         <?php
-        $myQuest = file_get_contents("quest.txt");
+        $myQuest = file_get_contents("contact.txt");
         $records = explode("<----->", $myQuest);
         foreach ($records as $rec) {
             $row = explode("\n", trim($rec));

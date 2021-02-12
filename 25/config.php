@@ -57,7 +57,7 @@ function test_input($data)
 if (!empty($name) & !empty($email) & !empty($website) & !empty($comment) & !empty($gender)){
 $row = "\n<----->\n" . $name . "\n" . $email .
     "\n" . $website . "\n" . $comment . "\n" . $gender ;
-file_put_contents("quest.txt", $row, FILE_APPEND);
+file_put_contents("contact.txt", $row, FILE_APPEND);
 }
 // header("Location: ?");
 // die();

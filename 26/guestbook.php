@@ -1,5 +1,7 @@
 <?php
 require_once "config.php";
+$nameErr = $emailErr = $genderErr = $commentErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +39,7 @@ require_once "config.php";
     </form>
     <table>
         <caption>
-            <h2>My guest<h2>
+            <h2>My guest</h2>
         </caption>
         <tr>
             <th>Name</th>
@@ -49,7 +51,7 @@ require_once "config.php";
             <th>Time</th>
         </tr>
         <?php
-        $myQuest = file_get_contents("quest.txt");
+        $myQuest = file_get_contents("contact.txt");
         $records = explode("<----->", $myQuest);
         foreach ($records as $rec) {
             $row = explode("\n", trim($rec));
