@@ -1,4 +1,5 @@
 <?php
+$name=$surname=$email=$phone=$social ="";
 /** @var string $name
  * @var string $nameErr
  * @var string $surname
