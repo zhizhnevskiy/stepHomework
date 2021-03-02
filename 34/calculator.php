@@ -76,7 +76,6 @@ $answer1 = $_POST["q1"];
 $answer2 = $_POST["q2"];
 $answer3 = $_POST["q3"];
 
-
 echo "Ваш результат = ";
 
 if ($answer1 == "" || $answer2 == "") {
